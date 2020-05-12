@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="theme-color" content="#00BFFF">
+
+    <Link rel = "icon" href="imagens/logo.png" type = "image/x-icon"/>
+
+    <!--  Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- importa ícones -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+
+    <!-- Scripts -->
+    <script src="javascript/javascript.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+
+    <noscript>
+      <h2>Caro leitor!
+      Se você estiver lendo esta mensagem é porque o seu navegador não suporta
+      "javascript" ou porque a permissão de executar "Javascript" está desabilitada.
+      Por favor ative a pemissão para Javascript.</h2>
+    </noscript>
+
+    <title>Portal Acessibilidade - Menino ganha prêmio por aplicativo para pessoas com deficiência auditiva</title>
+
+  </head>
+  <body>
+    
+    <a name="topo"></a><!-- âncora de link voltar ao topo -->
+    <div class="center">
+      <div class="container-fluid acessibilidade"><!-- tava fluid-->
+        <div class="row">
+          <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+
+            <!-- Start Audima Widget Injection 
+            <div id="audimaWidget"></div>
+            <script src="//audio.audima.co/audima-widget.js"></script>
+             End Audima Widget Injection -->
+            <br>
+            <div class="row align-items-center justify-content-center">
+            <table summary="Tabela referente aos atalhos de acessibilidade" class="table table-responsive table-active">
+            <!-- table table-dark    summary é utilizado para identificar uma tabela quando for utilizado algum equipamento de leitura para deficiente visual-->
+              <tbody>
+                  <p>
+                    <button onClick="contraste('escuro');" class="btn btn-dark" title="Contraste escuro">tema escuro</button> <!-- Botão contraste -->
+                    <button onClick="contraste('claro');" class="btn btn-light" title="Contraste claro">tema claro</button> <!-- Botão contraste -->
+
+                    <!-- Botões de Acessibilidade -->
+                    <button onClick="fonte('a');" class="btn btn-warning" title="Aumentar fonte!">A+</button> <!-- Botão fonte + -->
+                    <button onClick="fonte('n');" class="btn btn-warning" title="Fonte em tamanho normal!">A</button> <!-- Botão tamanho normal de fonte -->
+                    <button onClick="fonte('d');" class="btn btn-warning" title="Diminuir fonte!">A-</button> <!-- Botão fonte - -->  
+                  </p>
+                <tr class="mobile">                               
+                    <td><a href="index.html" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a></td>
+                    <td><a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a></td>
+                    <td><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td>
+                    <!-- acesskey é referência ao número ou letra digitada juntamente com a tecla ALT-->  
+                    
+                    </br>                  
+                </tr>
+                
+              </tbody>
+            </table>
+            </div>
+            
+           
+            <h2>TALVEZ A LOGO VAI FICAR AKI !</h2>
+
+            <nav class="navbar navbar-expand-lg navbar-light acessibilidade">
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                  <li class="nav-item active botao_menu w3-large"> <!-- não existia class="w3-large" -->
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href="index.html" id="link"> <div class="fa fa-home"></div> Início <span class="sr-only"> (1)</span></a>
+                  </li>
+                  <li class="nav-item active botao_menu">
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href=""> LINK 2 <span class="sr-only">(2)</span></a>
+                  </li>
+                  <li class="nav-item active botao_menu">
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href=""> LINK 3 <span class="sr-only">(3)</span></a>
+                  </li>
+                  <li class="nav-item active botao_menu">
+                    <a class="nav-link btn btn-outline-primary acessibilidade" href="contato.html"> <div class="fa fa-file-text-o"></div> Contato <span class="sr-only">(4)</span></a>
+                  </li>
+
+                </ul>
+              </div>               
+            </nav>            
+
+            <div class="box_noticia">
+              <div class="acessibilidade">
+               
+                <!-- ===================================================================== -->
+
+                <div class="row">                    
+                     <div class="col-md-8 noticia acessibilidade"> 
+                       
+                       <div class="col-md-5 noticia acessibilidade">
+                            <img src="imagens/brasileiro-ganha-premio-internacional.jpg" class="img-fluid rounded img-thumbnail img_noticia" alt="Portal Acessibilidade - Notícia #1" id="teste" align="left"/> <!-- align="left" width="350px" height= "350px"-->
+                        </div>
+                       
+                       <!-- <div class="col-md-6 noticia acessibilidade"> -->
+                            <a href="#" class="acessibilidade">
+                                <strong><h1><div class="titulo_noticia acessibilidade">Menino de Florianópolis ganha prêmio por aplicativo para ajudar deficientes auditivos.</div></h1></strong>
+                                  <div class="texto_noticia acessibilidade">
+                                    <p>Alexandre nasceu surdo e recebeu ouvidos biônicos para escutar. Agora, pensou em uma forma de melhorar a qualidade do som do implante. A ideia rendeu um prêmio internacional. <br>
+                                    </p>
+                                    
+                                    <p>Francisco Alexandre Batalha, 12 anos, anda de skate, joga bola, já fez judô e adora ver vídeos na internet, coisas que muitos garotos da idade dele gostam de fazer. Se não fosse um aparelhinho visível atrás da orelha, ninguém diria que ele tem os dois ouvidos biônicos. É isso mesmo, Alexandre, como é chamado pela família, nasceu com surdez profunda e escuta por meio de uma tecnologia implantada quando ele tinha dois anos. 
+                                    </p>
+
+                                    <p>A mãe, a administradora Deborah Batalha, 37 anos, conta que a surdez de Alexandre foi diagnosticada pouco antes dele completar dois anos, mas a primeira suspeita veio com 15 dias de vida, após o teste da orelhinha feito na maternidade em Manaus, no estado do Amazonas, onde a família morava.
+                                    </p>
+                                    
+                                    <p>— Eu não acreditava que meu filho poderia ser deficiente auditivo — diz Deborah.</p>
+                                    
+                                    <p>Alexandre chegou a usar uma prótese de amplificação sonora. Mas como a surdez era profunda, o aparelho não apresentou resultados. O garoto precisava fazer um implante coclear, mais conhecido como ouvido biônico. O implante é custeado pelo Sistema Único de Saúde (SUS), mas ele conseguiu após um longo período na fila de espera. No Hospital Universitário de Florianópolis, único que faz o implante pelo SUS em Santa Catarina, a lista de espera tem em torno de 70 pessoas, sendo que o tempo médio de espera é de três anos.
+                                    </p>
+                                    
+                                    <p>O que os pais não esperavam era que um congresso realizado pela Universidade do Estado do Amazonas (UEA) em parceria com uma empresa internacional faria uma cirurgia gratuita a um dos pacientes da fila do SUS. Alexandre fez o implante no ouvido direito em 5 de setembro de 2008. Um mês depois, ele começou a ouvir.
+                                    </p>
+                                    
+                                    <p>– Foi um momento emocionante. Ele teve uma reação tranquila, ficava olhando para os lados, dava um sorrisinho de leve. Na rua, ficava olhando quando os carros faziam barulho. Foi muito lindo – relembra a mãe. 
+                                    </p>
+                                    
+                                    <p>Com cinco anos, ouvindo de apenas um lado, Alexandre já sabia ler e escrever. Aprendeu em casa, devido à dedicação dos pais. Em 2013, Deborah e o marido, Francisco Batalha, 49, entraram na Justiça para que o filho conseguisse fazer o implante no ouvido esquerdo por meio do SUS. Eles conseguiram. Hoje, o garoto escuta normalmente.
+                                    </p>
+                                    
+                                    <p>– Com o implante posso escutar filmes, sons da natureza, sons que eu gosto. Se não fosse o implante, não escutaria nenhum som e teria muitas dificuldades nas aulas e no futuro, no trabalho – diz Alexandre, que sonha em ser médico para ajudar outras pessoas com deficiência auditiva.
+                                    </p>
+                                    
+                                    <p>
+                                    <strong>Prêmio de aniversário</strong>    
+                                    </p>
+                                    
+                                    <p>O presente veio em forma de um prêmio internacional da empresa de implantes. O garoto ficou entre os sete de um total de 240 crianças inscritas em todo o mundo em um concurso de inventores. A família foi para a Áustria onde Alexandre recebeu o certificado de inventor, além de conhecer um laboratório de implantes cocleares. Quem descobriu a competição foi o pai, Francisco Batalha, na internet:
+                                    </p>
+                                    
+                                    <p>– Mostramos a ideia para o Alexandre, pedimos para ele criar alguma coisa. Podia criar algo novo que melhorasse a vida dos deficientes auditivos ou aperfeiçoar algo já existente.
+                                    </p> 
+                                    
+                                    <p>O pequeno inventor se voltou para as próprias dificuldades para criar algo que melhorasse a vida dele e de outras pessoas que têm ouvido biônico.
+                                    
+                                    </p>
+                                    
+                                    <p>– A minha ideia foi desenvolver um aplicativo para controlar o implante pelo smartphone. O que mais me incomoda é o barulho de fora, porque quando estou assistindo a um vídeo tem o som de carros que atrapalham, eu queria que nesse aplicativo tivesse uma função que tirasse os sons de fora – conta Alexandre.
+                                    </p>
+                                    
+                                    <p>A mãe explica que o implante é uma tecnologia, não é uma audição natural, por isso, em um ambiente ruidoso o implante não consegue tirar esse ruído para que ele possa entender o que falam.
+                                    </p>
+                                    
+                                    <p>– Ele pensou em questões para controlar o implante e tirar os ruídos, para equalizar o som.
+                                    </p>
+                                    
+                                    <p>Para a família, que se dedica totalmente ao garoto, vê-lo receber um prêmio internacional é motivo de orgulho e certeza que seguiram o caminho certo.
+                                    </p>
+                                    
+                                    <p>– Eu tenho um orgulho imenso dele. Mesmo com surdez profunda e usuário de uma tecnologia, ele superou tudo e é um filho maravilhoso. Isso estimula outras famílias a incentivarem seus filhos – orgulha-se Deborah.
+                                    </p>
+                                    
+                                    <p>— Eu nunca vi meu neto como surdo, ele não é diferente, ele veio para fazer a diferença. Que através do exemplo dele, outras crianças consigam ouvir. E agora ele vai representar o Estado num prêmio mundial, que isso sirva de exemplo para muitos pais — diz a avó coruja, Darlene Antunes, 55. 
+                                    </p>
+                                    
+                                    <p><strong>Hospital Universitário é referência na realização de implantes</strong>
+                                    </p>
+                                    
+                                    <p>Desde 2011 o Hospital Universitário de Florianópolis (HU) é credenciado pelo Ministério da Saúde (MS) para a realização de implantes cocleares. A fonoaudióloga do hospital Francine Freiberger informa que em sete anos já foram realizadas 154 cirurgias e 140 pacientes têm o ouvido biônico (algumas fizeram o implante nos dois ouvidos).
+                                    </p>
+                                    
+                                    <p>Qualquer pessoa acima dos seis meses de vida pode fazer o implante coclear. A cirurgia é indicada para quem tem surdez severa ou profunda. Para conseguir a cirurgia pelo SUS, o paciente precisa ser surdo dos dois ouvidos e já ter testado, sem sucesso, uma prótese.
+                                    </p>
+                                    
+                                    <p>Em Santa Catarina, há apenas cinco centros ambulatoriais responsáveis pelo diagnóstico e reabilitação dos pacientes implantados: o Instituto Otovida, em Florianópolis, a Universidade do Vale do Itajaí, em Itajaí, a Associação Assistencial dos Deficientes Auditivos Visuais (AADAV), em Jaraguá do Sul, Hospital Centrinho, em Joinville, e a clínica Otiouve, em Chapecó.
+                                    </p>
+                                    
+                                    
+                                    fonte: <a href="https://www.nsctotal.com.br/noticias/menino-de-florianopolis-ganha-premio-por-aplicativo-para-ajudar-deficientes-auditivos" class="acessibilidade">
+                                        <div class="italico">https://www.nsctotal.com.br</div></a>
+                                        <br>
+                                        
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://portalacessibilidade.000webhostapp.com/menino-ganha-premio-por-aplicativo.html" target="_blank" class="ico-facebook"
+                        title="Compartilhe no Facebook"><i class="fa fa-facebook-square fa-2x acessibilidade"></i></a>
+                                    
+                                     <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/CVR5KUnaar4?start=11&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay="autoplay"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        
+                                    </iframe> 
+                                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CVR5KUnaar4?autoplay=1" frameborder="0" autoplay; allowfullscreen>
+                                        
+                                    </iframe>-->
+                                    
+                                  </div>                            
+                            </a>
+                            <hr>
+                        <!-- </div> -->
+                        <!-- <a href="https://www.facebook.com"><img src="https://png.icons8.com/metro/50/000000/facebook.png" alt="logo do facebook"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u= URL DA NOTÍCIA AKI" target="_blank" class="ico-facebook"
+                        title="Compartilhe pelo Facebook"><img src="https://png.icons8.com/metro/50/000000/facebook.png" alt="logo do facebook"></a> -->
+                    <!-- </div> -->                   
+
+                
+                </div><!-- row -->
+                
+                <!-- teste das notícias em outra coluna -->
+                    <div class="col-md-4 noticia acessibilidade"> 
+                        <h2>outras notícias</h2>
+                        <hr>
+                        <a href="acessibilidade-de-pessoas-com-deficiencia-sites-e-inferior-1.html">
+                            <img src="imagens/icone_acessibilidade.png" 
+                            class="img-fluid rounded img-thumbnail" alt="ícone de acessibilidade" id="teste" width="300px" height= "300px"  /> <!--onmouseover="bigImg(this)" onmouseout="normalImg(this)" -->
+                            <br>
+                          <div class="texto_noticia acessibilidade">
+                            Acessibilidade de pessoas com deficiência a sites é inferior a 1%.
+                          </div>                            
+                        </a><hr>
+                        
+                        <a href="#" >
+                            <img src="imagens/o-que-voce-sabe-sobre-catarata-entenda-mais-aqui.jpg" 
+                            class="img-fluid rounded img-thumbnail" alt="imagem sobre deficiência visual" id="teste" width="350px" height= "350px"  /> <!--onmouseover="bigImg(this)" onmouseout="normalImg(this)" -->
+                            <br>
+                          <div class="texto_noticia acessibilidade">
+                            Saiba mais sobre deficiência visual. 
+                          </div>                            
+                        </a><hr>
+                        
+                        <a href="#" >
+                            <img src="imagens/brasileiro-ganha-premio-internacional.jpg" 
+                            class="img-fluid rounded img-thumbnail" alt="Portal Acessibilidade - Notícia #1" id="teste" width="350px" height= "350px"  /> <!--onmouseover="bigImg(this)" onmouseout="normalImg(this)" -->
+                            <br>
+                          <div class="texto_noticia acessibilidade">
+                            Menino de Florianópolis ganha prêmio por
+                            aplicativo para ajudar deficientes auditivos.
+                          </div>                            
+                        </a><hr>
+                        
+                        <a href="#" >
+                            <img src="imagens/brasileiro-ganha-premio-internacional.jpg" 
+                            class="img-fluid rounded img-thumbnail" alt="Portal Acessibilidade - Notícia #1" id="teste" width="350px" height= "350px"  /> <!--onmouseover="bigImg(this)" onmouseout="normalImg(this)" -->
+                            <br>
+                          <div class="texto_noticia acessibilidade">
+                            Menino de Florianópolis ganha prêmio por
+                            aplicativo para ajudar deficientes auditivos.
+                          </div>                            
+                        </a>
+                   
+                <!--  =====================================================================  -->
+
+              </div><!-- class acessibilidade  -->
+            </div>
+            <br>
+
+          </div>
+      
+            <footer>
+                <a href="#topo" class="acessibilidade" title="voltar ao topo"> <div class="fa fa-arrow-circle-up"></div>Voltar para o topo</a>  
+                <!-- <a href='#' id='backtotop'><i class='fa fa-chevron-up'></i>Topo</a> -->      
+                
+            </footer> 
+        </div>      
+        <p class="acessibilidade">© Alunos do Flávio</p>
+      </div>
+      
+    </div>
+    <br><br>
+  <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var a=n[o];" "==a.charAt(0);)a=a.substring(1);if(0==a.indexOf(e))return a.substring(e.length,a.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0],wpSidebar=document.getElementById("adminmenuwrap"),wpTopBarRight=document.getElementById("wp-admin-bar-top-secondary");if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;} .upgrade-btn-sidebar {display: none;} #wp-toolbar .top-bar-upgrade-btn {width: 52px; height: 46px !important; padding: 0 !important;} .top-bar-upgrade-btn__text {display: none;} .dashicons-star-filled.top-bar-upgrade-btn__icon::before {font-size: 28px; margin-top: 10px; width: 28px; height: 28px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; right: 0; display: flex; padding: 0 5%}} @media only screen and (max-width: 960px) {.upgrade-btn-sidebar {border-radius: 0 !important; padding: 10px 0 !important; margin: 0 !important;} .upgrade-btn-sidebar__icon {display: block !important; margin: auto;} .upgrade-btn-sidebar__text {display: none;}}  .web-hosting-90-off-image {max-width: 90%; margin-top: 20px;} .content-wrapper {z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 12px -6px #cc292f; max-width: 350px; border: 0; border-radius: 3px; background-color: #6747c7 !important; padding: 15px 55px !important;  margin-bottom: 48px; font-size: 14px; font-weight: 800; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: rgba(103,71,199, 0.9) !important;} .upgrade-btn-sidebar {text-align:center;background-color:#ff4546;max-width: 350px;border-radius: 3px;border: 0;padding: 12px; margin: 20px 10px;display: block; font-size: 12px;color: #ffffff;font-weight: 700;text-decoration: none;} .upgrade-btn-sidebar:hover, .upgrade-btn-sidebar:focus, .upgrade-btn-sidebar:active {background-color: rgba(255,69,70, 0.9); color: #ffffff;} .upgrade-btn-sidebar__icon {display: none;} .top-bar-upgrade-btn {height: 100% !important; display: inline-block !important; padding: 0 10px !important; color: #ffffff; cursor: pointer;} .top-bar-upgrade-btn:hover, .top-bar-upgrade-btn:active, .top-bar-upgrade-btn:focus {background-color: #ff4546 !important; color: #ffffff !important;} .top-bar-upgrade-btn__icon {margin-right: 6px;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Upgrade Now</button>',(notification=notification[0]).setAttribute("style","background-color: #f8f8f8; border-left-color: #6747c7 !important;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Limited Time Offer",h1Tag.setAttribute("style","color: #32454c;  margin-top: 48px; font-size: 48px; font-weight: 700;");var h2Tag=document.createElement("H2");h2Tag.innerHTML="From $0.79/month",h2Tag.setAttribute("style","color: #32454c; margin: 20px 0 45px 0; font-size: 48px; font-weight: 700;"),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Don’t miss the opportunity to enjoy up to <strong>4x WordPress Speed, Free SSL and all premium features</strong> available for a fraction of the price!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; color: #6f7c81; margin-bottom: 20px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/wp-inject-default-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0];wpSidebar.insertAdjacentHTML("beforeend",'<a href="https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp-sidebar" target="_blank" class="upgrade-btn-sidebar"><span class="dashicons dashicons-star-filled upgrade-btn-sidebar__icon"></span><span class="upgrade-btn-sidebar__text">Upgrade</span></a>'),wpTopBarRight.insertAdjacentHTML("beforebegin",'<a class="top-bar-upgrade-btn" href="https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp-top-bar" target="_blank"><span class="ab-icon dashicons-before dashicons-star-filled top-bar-upgrade-btn__icon"></span><span class="top-bar-upgrade-btn__text">Go Premium</span></a>')}</script><script type="text/javascript" src="https://a.opmnstr.com/app/js/api.min.js" data-campaign="f6brbmuxflyqoriatchv" data-user="71036" async></script></body>
+</html>
