@@ -50,50 +50,46 @@
   </head>
   <body>
        
-    <a name="topo"></a><!-- âncora de link voltar ao topo -->
-    
-      <div class="container-fluid acessibilidade">
+       <a name="topo"></a><!-- âncora de link voltar ao topo -->
+    <div class="center">
+      <div class="container-fluid acessibilidade"><!-- tava fluid-->
         <div class="row">
           <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
 
-            <!-- Start Audima Widget Injection --
+            <!-- Start Audima Widget Injection 
             <div id="audimaWidget"></div>
             <script src="//audio.audima.co/audima-widget.js"></script>
-            <!-- End Audima Widget Injection -->
-          
+             End Audima Widget Injection -->
             <br>
             <div class="row align-items-center justify-content-center">
             <table summary="Tabela referente aos atalhos de acessibilidade" class="table table-responsive table-active">
             <!-- table table-dark    summary é utilizado para identificar uma tabela quando for utilizado algum equipamento de leitura para deficiente visual-->
               <tbody>
                   <p>
-                    <!-- Botão contraste -->
-                    <button onClick="contraste('escuro');" value="escuro" id="contraste" class="btn btn-dark" title="Contraste escuro" type="button">tema escuro</button>
-                    <button onClick="contraste('claro');" value="claro" id="contraste" class="btn btn-light" title="Contraste claro" type="button">tema claro</button>
-                    
+                    <button onClick="contraste('escuro');" class="btn btn-dark" title="Contraste escuro">tema escuro</button> <!-- Botão contraste -->
+                    <button onClick="contraste('claro');" class="btn btn-light" title="Contraste claro">tema claro</button> <!-- Botão contraste -->
+
                     <!-- Botões de Acessibilidade -->
                     <button onClick="fonte('a');" class="btn btn-warning" title="Aumentar fonte!">A+</button> <!-- Botão fonte + -->
                     <button onClick="fonte('n');" class="btn btn-warning" title="Fonte em tamanho normal!">A</button> <!-- Botão tamanho normal de fonte -->
                     <button onClick="fonte('d');" class="btn btn-warning" title="Diminuir fonte!">A-</button> <!-- Botão fonte - -->  
                   </p>
-                <tr class="mobile">
-                                                 
-                    <td class="mobile"><a href="index.html" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a></td>
-                    <td class="mobile"><a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a></td>
-                    <td class="mobile"><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td>
+                <tr class="mobile">                               
+                    <td><a href="index.html" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a></td>
+                    <td><a href="#" accesskey="2"> <div class="acessibilidade"><strong>Ir para OUTRA PÁGINA(ALT + 2)</strong></div></a></td>
+                    <td><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td>
                     <!-- acesskey é referência ao número ou letra digitada juntamente com a tecla ALT-->  
-                                    
+                    
+                    </br>                  
                 </tr>
                 
               </tbody>
             </table>
             </div>
-                      
-            <div class="row align-items-center justify-content-center">
+            
                 <header>
                     <h1><img src="imagens/logo.png" class="img img-fluid logo" alt="logo do site Portal Acessibilidade">Portal Acessibilidade</h1>
                 </header>
-            </div>           
             
             <nav class="navbar navbar-expand-lg navbar-light acessibilidade">
 
