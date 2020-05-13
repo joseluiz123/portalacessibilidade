@@ -155,7 +155,7 @@ a:active define o estilo do link ativo (o que foi "clicado").
 } */
 
 /* oculta item em dispositivos com tela pequena */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     .mobile{ 
         /* display: inline !important; */
         /* background-color: blue; */
