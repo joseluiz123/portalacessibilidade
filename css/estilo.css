@@ -57,6 +57,7 @@
 
 #email{
    font-size: 22pt;
+   word-wrap: break-word;
 }
 
 .titulo_noticia{
