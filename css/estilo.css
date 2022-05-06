@@ -1,71 +1,77 @@
-.center{
+.center {
     text-align: center;
 }
 
-.italico{
+.italico {
     font-style: italic;
-    
+
 }
 
-.botao_menu{
+.botao_menu {
     margin: 10px;
 }
 
-.botao_menu_ac{
+.botao_menu_ac {
     margin: 2px;
     font-size: 29pt;
 }
 
-.box_noticia{
-    padding:2rem 1rem;
-    margin-bottom:2rem;
-    background-color:#e9ecef;
-    border-radius:.3rem
-    }
-    @media (min-width:576px){
-        .box_noticia{
-            padding:4rem 2rem
-            }}
-            .box_noticia-fluid{
-                padding-right:0;
-                padding-left:0;
-                border-radius:0
-                }
+.box_noticia {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem
+}
 
-.atalhos{
-    padding:2rem 1rem;
-    margin-bottom:1rem;
-    background-color:#e9ecef;
-    border-radius:.3rem
-}@media (min-width:576px){
-        .atalhos{
-            padding:1rem 2rem
-            }}
-                
-.noticia{
+@media (min-width:576px) {
+    .box_noticia {
+        padding: 4rem 2rem
+    }
+}
+
+.box_noticia-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0
+}
+
+.atalhos {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #e9ecef;
+    border-radius: .3rem
+}
+
+@media (min-width:576px) {
+    .atalhos {
+        padding: 1rem 2rem
+    }
+}
+
+.noticia {
     text-align: left;
     font-size: 29pt;
-    color:rgb(0, 0, 0)
+    color: rgb(0, 0, 0)
 }
 
-@media (min-width:576px){
- .email{
+@media (min-width:576px) {
+    .email {
+        font-size: 22pt;
+    }
+
+}
+
+#email {
     font-size: 22pt;
- }
-
+    word-wrap: break-word;
 }
 
-#email{
-   font-size: 22pt;
-   word-wrap: break-word;
-}
-
-.titulo_noticia{
+.titulo_noticia {
     font-size: 25pt;
-    color:rgb(0, 0, 0)
+    color: rgb(0, 0, 0)
 }
 
-.texto-contato{
+.texto-contato {
     font-size: 16pt;
     /* color:rgb(255, 0, 0); */
 }
@@ -74,8 +80,8 @@
     //font-size: 17pt;    
 }*/
 
-.img_noticia{
-    margin: 0px 15px 0px 0px; 
+.img_noticia {
+    margin: 0px 15px 0px 0px;
     /*align-content: left; */
     text-align: left;
     width: 350px;
@@ -83,25 +89,26 @@
     /* position:absolute; */
     /* margin-bottom:20rem; */
     float: left;
-} 
+}
 
-.img_noticia_inicio{
+.img_noticia_inicio {
     width: 350px;
     height: 350px;
-   /* max-width: 200px;
+    /* max-width: 200px;
     max-height: 200px;
     width: auto;
     height: auto; */
-} 
+}
 
-.logo{
+.logo {
     width: 80px;
     height: 80px;
 }
 
-a:link { /* define o estilo do link no estado inicial; */
+a:link {
+    /* define o estilo do link no estado inicial; */
     text-decoration: none !important;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 17pt;
 }
 
@@ -111,9 +118,10 @@ a:hover {
     /** text-shadow: 0 0 4px rgb(0, 26, 255); coloca sombra no link**/
 }
 
-a:visited { /* define o estilo do link no estado inicial; */
+a:visited {
+    /* define o estilo do link no estado inicial; */
     text-decoration: none !important;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 17pt;
 }
 
@@ -123,17 +131,17 @@ a:hover define o estilo do link quando passa-se o mouse sobre ele;
 a:active define o estilo do link ativo (o que foi "clicado").
 */
 
-.teste{
-    position:relative;
-    top:0;
-    padding:4px;
-    background-color:rgb(255, 255, 255);
+.teste {
+    position: relative;
+    top: 0;
+    padding: 4px;
+    background-color: rgb(255, 255, 255);
     transition: all .2s ease-in-out
 }
 
-.teste:hover{
-    top:-8px;
-    box-shadow:0 5px 30px #999
+.teste:hover {
+    top: -8px;
+    box-shadow: 0 5px 30px #999
 }
 
 
@@ -157,7 +165,7 @@ a:active define o estilo do link ativo (o que foi "clicado").
 
 /* oculta item em dispositivos com tela pequena */
 @media only screen and (max-width: 420px) {
-    .mobile{ 
+    .mobile {
         /* display: inline !important; */
         /* background-color: blue; */
         display: none;
@@ -172,3 +180,8 @@ a:active define o estilo do link ativo (o que foi "clicado").
         
     }
 } */
+
+
+body.escuro {
+    background-color: #f1f2;
+}

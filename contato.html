@@ -1,220 +1,247 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#00BFFF">
 
-    <Link rel = "icon" href="imagens/logo.png" type = "image/x-icon"/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#00BFFF">
 
-    <!--  Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <Link rel="icon" href="imagens/logo.png" type="image/x-icon" />
 
-    <!-- importa ícones -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <!-- Scripts -->
-    <script src="javascript/javascript.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-        
-    <noscript>
-      <h2>Caro leitor!
+  <!-- importa ícones -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+
+  <noscript>
+    <h2>Caro leitor!
       Se você estiver lendo esta mensagem é porque o seu navegador não suporta
       "javascript" ou porque a permissão de executar "Javascript" está desabilitada.
       Por favor ative a pemissão para Javascript.</h2>
-    </noscript>
-    <script>
-      // apenas números
-      function onlyNumber( event ){
-        var key = event.which || event.keyCode;
-        if( key != 8 && isNaN( String.fromCharCode( key ) ) ){
-          event.preventDefault();
-        }
+  </noscript>
+  <script>
+    // apenas números
+    function onlyNumber(event) {
+      var key = event.which || event.keyCode;
+      if (key != 8 && isNaN(String.fromCharCode(key))) {
+        event.preventDefault();
       }
-    </script>
+    }
+  </script>
 
-    <title>Portal Acessibilidade - Contato</title>
-  </head>
-  <body>
-       
-       <a name="topo"></a><!-- âncora de link voltar ao topo -->
-    
-      <div class="container-fluid acessibilidade"><!-- tava fluid-->
-        <div class="row">
-          <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+  <title>Portal Acessibilidade - Contato</title>
+</head>
 
-            <!-- Start Audima Widget Injection 
+<body>
+
+  <a name="topo"></a><!-- âncora de link voltar ao topo -->
+
+  <div class="container-fluid acessibilidade">
+    <!-- tava fluid-->
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+
+        <!-- Start Audima Widget Injection 
             <div id="audimaWidget"></div>
             <script src="//audio.audima.co/audima-widget.js"></script>
              End Audima Widget Injection -->
-            <br>
-            <div class="row align-items-center justify-content-center">
-            <table summary="Tabela referente aos atalhos de acessibilidade" class="table table-responsive table-active">
+        <br>
+        <div class="row align-items-center justify-content-center">
+          <table summary="Tabela referente aos atalhos de acessibilidade" class="table table-responsive table-active">
             <!-- table table-dark    summary é utilizado para identificar uma tabela quando for utilizado algum equipamento de leitura para deficiente visual-->
-              <tbody>
-                  <p>
-                    <button onClick="contraste('escuro');" class="btn btn-dark" title="Contraste escuro">tema escuro</button> <!-- Botão contraste -->
-                    <button onClick="contraste('claro');" class="btn btn-light" title="Contraste claro">tema claro</button> <!-- Botão contraste -->
+            <tbody>
+              <p>
+                <button onClick="contraste('escuro');" class="btn btn-dark" title="Contraste escuro">tema
+                  escuro</button> <!-- Botão contraste -->
+                <button onClick="contraste('claro');" class="btn btn-light" title="Contraste claro">tema claro</button>
+                <!-- Botão contraste -->
 
-                    <!-- Botões de Acessibilidade -->
-                    <button onClick="fonte('a');" class="btn btn-warning" title="Aumentar fonte!">A+</button> <!-- Botão fonte + -->
-                    <button onClick="fonte('n');" class="btn btn-warning" title="Fonte em tamanho normal!">A</button> <!-- Botão tamanho normal de fonte -->
-                    <button onClick="fonte('d');" class="btn btn-warning" title="Diminuir fonte!">A-</button> <!-- Botão fonte - -->  
-                  </p>
-                <tr class="mobile">                               
-                    <td><a href="index.html" accesskey="1"> <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div></a></td>
-                    <td><a href="entrevista.html" accesskey="2"> <div class="acessibilidade"><strong>Ir para ENTREVISTA(ALT + 2)</strong></div></a></td>
-                    <!--<td><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td> -->
-                    <!-- acesskey é referência ao número ou letra digitada juntamente com a tecla ALT-->  
-                    
-                    </br>                  
-                </tr>
-                
-              </tbody>
-            </table>
-            </div>
-            
-            <div class="center">
-                <header>
-                    <h1><img src="imagens/logo.png" class="img img-fluid logo" alt="logo do site Portal Acessibilidade">Portal Acessibilidade</h1>
-                </header>
-            </div>
+                <!-- Botões de Acessibilidade -->
+                <button onClick="fonte('a');" class="btn btn-warning" title="Aumentar fonte!">A+</button>
+                <!-- Botão fonte + -->
+                <button onClick="fonte('n');" class="btn btn-warning" title="Fonte em tamanho normal!">A</button>
+                <!-- Botão tamanho normal de fonte -->
+                <button onClick="fonte('d');" class="btn btn-warning" title="Diminuir fonte!">A-</button>
+                <!-- Botão fonte - -->
+              </p>
+              <tr class="mobile">
+                <td><a href="index.html" accesskey="1">
+                    <div class="acessibilidade"><strong>Ir para CONTEÚDO PRINCIPAL(ALT + 1)</strong></div>
+                  </a></td>
+                <td><a href="entrevista.html" accesskey="2">
+                    <div class="acessibilidade"><strong>Ir para ENTREVISTA(ALT + 2)</strong></div>
+                  </a></td>
+                <!--<td><a href="contato.html" accesskey="3"> <div class="acessibilidade"><strong>Ir para CONTATO(ALT + 3)</strong></div></a></td> -->
+                <!-- acesskey é referência ao número ou letra digitada juntamente com a tecla ALT-->
 
-            <nav class="navbar navbar-expand-lg navbar-light acessibilidade">
+                </br>
+              </tr>
 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            </tbody>
+          </table>
+        </div>
 
-                  <li class="nav-item active botao_menu w3-large">
-                    <a class="nav-link btn btn-outline-primary acessibilidade" href="index.html" id="link"> <i class="fa fa-home"></i> Início <span class="sr-only">(1)</span></a>
-                  </li> 
-                  <li class="nav-item active botao_menu">
-                    <a class="nav-link btn btn-outline-primary acessibilidade" href="entrevista.html"> Entrevista <span class="sr-only">(2)</span></a> 
-                  </li>
-                  <li class="nav-item active botao_menu">
-                    <a class="nav-link btn btn-outline-primary acessibilidade" href="sobre-nos.html"> Sobre Nós <span class="sr-only">(3)</span></a>
-                  </li>
-                  <!-- <li class="nav-item active botao_menu">
+        <div class="center">
+          <header>
+            <h1><img src="imagens/logo.png" class="img img-fluid logo" alt="logo do site Portal Acessibilidade">Portal
+              Acessibilidade</h1>
+          </header>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light acessibilidade">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+              <li class="nav-item active botao_menu w3-large">
+                <a class="nav-link btn btn-outline-primary acessibilidade" href="index.html" id="link"> <i
+                    class="fa fa-home"></i> Início <span class="sr-only">(1)</span></a>
+              </li>
+              <li class="nav-item active botao_menu">
+                <a class="nav-link btn btn-outline-primary acessibilidade" href="entrevista.html"> Entrevista <span
+                    class="sr-only">(2)</span></a>
+              </li>
+              <li class="nav-item active botao_menu">
+                <a class="nav-link btn btn-outline-primary acessibilidade" href="sobre-nos.html"> Sobre Nós <span
+                    class="sr-only">(3)</span></a>
+              </li>
+              <!-- <li class="nav-item active botao_menu">
                     <a class="nav-link btn btn-outline-primary acessibilidade" href="contato.html"> <i class="fa fa-file-text-o"></i> Contato <span class="sr-only">(4)</span></a>
                   </li> -->
 
-                </ul>
-              </div>               
-            </nav> 
-             
-          <div class="box_noticia">
-            
-              <div class="row">
-                <!-- <div class="col-md-12 col-sm-12 col-xl-12"> -->
-                
-                <div class="col-xs-6 col-md-6 acessibilidade">
-                  
-                  <h3>Envie uma mensagem para nós, com dúvidas <br>
-                    sugestões, elogios, etc...</h3><br>
+            </ul>
+          </div>
+        </nav>
 
-                  <form action="https://formspree.io/meqrelbv" method="POST">  <!-- xvowgwrv -->
-                    
-                      <div class="form-group row">
-                        <div class="col-xs-8 col-md-8">
-                            <label for="formNome"><b>*Nome</b></label>
-                            <input type="text" name="nomeremetente" required class="form-control" placeholder="Nome" size="20">
-                        </div>
-                      </div>
+        <div class="box_noticia">
 
-                      <div class="form-group row">
-                        <div class="col-xs-8 col-md-8">
-                            <label for="formEmail"><b>*E-Mail</b></label>
-                            <input type="text" name="_replyto" required class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form                                    form-control" placeholder="Email"/>
-                        </div>
-                      </div>
+          <div class="row">
+            <!-- <div class="col-md-12 col-sm-12 col-xl-12"> -->
 
-                      <div class="form-group row">
-                        <div class="col-xs-8 col-md-8">
-                            <label for="formTelefone"><b>Telefone</b></label>
-                            <input type="text" name="telefone" onkeypress="onlyNumber(event);" class="form form-control" placeholder="Telefone (somente números)"/>
-                        </div>
-                      </div>
+            <div class="col-xs-6 col-md-6 acessibilidade">
 
-                      <div class="form-group row"> 
-                        <div class="col-xs-8 col-md-8">
-                            <label for="formAssunto"><b>*Assunto</b></label>
-                            <input type="text" name="assunto" required class="form form-control" placeholder="Assunto"/>
-                        </div>
-                      </div>
+              <h3>Envie uma mensagem para nós, com dúvidas <br>
+                sugestões, elogios, etc...</h3><br>
 
-                      <div class="form-group">
-                        <label for="formMensagem"><b>*Mensagem</b></label>
-                        <textarea name="mensagem" cols="35" rows="7" required class="form form-control"></textarea>
-                      </div>
+              <form action="https://formspree.io/meqrelbv" method="POST">
+                <!-- xvowgwrv -->
 
-                      <input name="enviar" type="reset" value="Limpar" class="btn btn-warning"/>
-                      <input type="submit" name="enviar" value="Enviar" class="btn btn-primary" />                
-                    
-                  </form> 
-                 
-                </div>
-                              
-                <!-- Coluna de detalhes de contato -->
-                <div class="col-xs-6 col-md-6 acessibilidade">
-                  <br>
-                  <h3><b>Detalhes de Contato</b></h3>
-                  <p>
-                   <div class="texto-contato"> 
-                    Rua Prof. José de Souza Herdy, 1160<br/>
-                    Bairro: Jardim Vinte e Cinco de Agosto<br/>
-                    Duque de Caxias - RJ, 25071-202
-                   </div>
-                  </p>
-
-                 <div class="texto-contato acessibilidade">    
-                    <a href="https://api.whatsapp.com/send?phone=5521980567807&text=Olá" class="acessibilidade">
-                    <abbr title="Whatsapp"> <img src="imagens/whatsapp-logo.png" width="35" height="35"/></abbr> (21)98056-7807</a><br/><br/>
-                  
-                  <i class="fa fa-envelope-o"></i>
-                    <abbr title="Email">E-mail</abbr>: <a href="mailto: portalacessibilidadebr@gmail.com" class="acessibilidade" id="email">portalacessibilidadebr@gmail.com</a>
-                    <br>                
-                  <i class="fa fa-clock-o"></i> 
-                    <abbr title="Horário de atendimento">Horário de atendimento:</abbr> Segunda - Sexta: 9:00 h às 17:00 h
-                  <br><br>  
-                  <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                    <a href="https://www.facebook.com/#/"><i class="fa fa-facebook-square fa-2x acessibilidade"></i></a>   
-                    <!-- <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a> -->                   
-                    <a href="https://instagram.com/portal_acessibilidade?igshid=uho3ftdbvjkm"><i class="fa fa-instagram fa-2x acessibilidade" aria-hidden="true"></i></a>
-                    </li>                   
-                  </ul>
-                 </div> 
+                <div class="form-group row">
+                  <div class="col-xs-8 col-md-8">
+                    <label for="formNome"><b>*Nome</b></label>
+                    <input type="text" name="nomeremetente" required class="form-control" placeholder="Nome" size="20">
+                  </div>
                 </div>
 
-                <br>
-                <hr>
+                <div class="form-group row">
+                  <div class="col-xs-8 col-md-8">
+                    <label for="formEmail"><b>*E-Mail</b></label>
+                    <input type="text" name="_replyto" required class="form-control"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                      class="form                                    form-control" placeholder="Email" />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-xs-8 col-md-8">
+                    <label for="formTelefone"><b>Telefone</b></label>
+                    <input type="text" name="telefone" onkeypress="onlyNumber(event);" class="form form-control"
+                      placeholder="Telefone (somente números)" />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-xs-8 col-md-8">
+                    <label for="formAssunto"><b>*Assunto</b></label>
+                    <input type="text" name="assunto" required class="form form-control" placeholder="Assunto" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="formMensagem"><b>*Mensagem</b></label>
+                  <textarea name="mensagem" cols="35" rows="7" required class="form form-control"></textarea>
+                </div>
+
+                <input name="enviar" type="reset" value="Limpar" class="btn btn-warning" />
+                <input type="submit" name="enviar" value="Enviar" class="btn btn-primary" />
+
+              </form>
+
+            </div>
+
+            <!-- Coluna de detalhes de contato -->
+            <div class="col-xs-6 col-md-6 acessibilidade">
+              <br>
+              <h3><b>Detalhes de Contato</b></h3>
+              <p>
+              <div class="texto-contato">
+                Rua Prof. José de Souza Herdy, 1160<br />
+                Bairro: Jardim Vinte e Cinco de Agosto<br />
+                Duque de Caxias - RJ, 25071-202
               </div>
+              </p>
 
+              <div class="texto-contato acessibilidade">
+                <a href="https://api.whatsapp.com/send?phone=5521980567807&text=Olá" class="acessibilidade">
+                  <abbr title="Whatsapp"> <img src="imagens/whatsapp-logo.png" width="35" height="35" /></abbr>
+                  (21)98056-7807</a><br /><br />
+
+                <i class="fa fa-envelope-o"></i>
+                <abbr title="Email">E-mail</abbr>: <a href="mailto: portalacessibilidadebr@gmail.com"
+                  class="acessibilidade" id="email">portalacessibilidadebr@gmail.com</a>
+                <br>
+                <i class="fa fa-clock-o"></i>
+                <abbr title="Horário de atendimento">Horário de atendimento:</abbr> Segunda - Sexta: 9:00 h às 17:00 h
+                <br><br>
+                <ul class="list-unstyled list-inline list-social-icons">
+                  <li>
+                    <a href="https://www.facebook.com/#/"><i class="fa fa-facebook-square fa-2x acessibilidade"></i></a>
+                    <!-- <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a> -->
+                    <a href="https://instagram.com/portal_acessibilidade?igshid=uho3ftdbvjkm"><i
+                        class="fa fa-instagram fa-2x acessibilidade" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <br>
+            <hr>
           </div>
 
-          <br><br>
-
         </div>
+
+        <br><br>
+
       </div>
-    
+    </div>
+    <!-- Scripts -->
+    <script src="./javascript/javascript.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
-  </body>
+
+</body>
+
 </html>
-
-
