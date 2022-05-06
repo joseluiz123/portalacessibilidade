@@ -13,7 +13,11 @@
 
 .botao_menu_ac {
     margin: 2px;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
     font-size: 29pt;
+
+
 }
 
 .box_noticia {
@@ -76,33 +80,52 @@
     /* color:rgb(255, 0, 0); */
 }
 
-/*.texto_noticia{
-    //font-size: 17pt;    
-}*/
 
 .img_noticia {
     margin: 0px 15px 0px 0px;
-    /*align-content: left; */
     text-align: left;
     width: 350px;
     height: 350px;
-    /* position:absolute; */
-    /* margin-bottom:20rem; */
     float: left;
 }
 
 .img_noticia_inicio {
     width: 350px;
     height: 350px;
-    /* max-width: 200px;
-    max-height: 200px;
-    width: auto;
-    height: auto; */
 }
 
 .logo {
     width: 80px;
     height: 80px;
+    display: inline-block;
+}
+
+/* header {
+    align-items: left;
+    text-align: left;
+} */
+
+header h1 {
+    display: inline-block;
+}
+
+@media(max-width: 560px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    header {
+        align-items: left;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        /* text-align: right; */
+        display: inline-block;
+        font-size: 2rem;
+    }
 }
 
 a:link {
@@ -145,24 +168,6 @@ a:active define o estilo do link ativo (o que foi "clicado").
 }
 
 
-/**
-#teste{
-    position:relative
-}
-
-#teste:hover{
-    top:-2px;
-    box-shadow:0 2px 2px #666
-} **/
-
-
-/* @media only screen and (max-width: 400px) {
-    .mobile-hide{
-        display: none !important; 
-        background-color: red;
-    }
-} */
-
 /* oculta item em dispositivos com tela pequena */
 @media only screen and (max-width: 420px) {
     .mobile {
@@ -170,18 +175,4 @@ a:active define o estilo do link ativo (o que foi "clicado").
         /* background-color: blue; */
         display: none;
     }
-}
-
-/* 
-@media only screen and (min-width: 500px) {
-    .desktop-hide{ 
-        display: none !important; 
-        background-color: green;
-        
-    }
-} */
-
-
-body.escuro {
-    background-color: #f1f2;
 }
